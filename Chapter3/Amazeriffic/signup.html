@@ -10,53 +10,66 @@
 
 <body>
   <header>
-    <h1>Amazeriffic</h1>
-    <nav>
-      <a href="signup.html">Sign Up!</a> |
-      <a href="faq.html">FAQ</a> |
-      <a href="#">Support</a>
-    </nav>
+    <div class="ui menu">
+      <div class="header item">
+        Amazeriffic
+      </div>
+      <a class="active item">Sign Up!</a>
+      <a href="faq.html" class="item">FAQ</a>
+      <a class="item">Support</a>
+    </div>
   </header>
 
   <main>
-    <h2>Sign Up!</h2>
-    <p>Fill out the form below to create a new account:</p>
-    <form action="processingscript.php" method="post">
-      <p>Username
-        <input type="text" name="username">
-      </p>
-      <p>E-mail Address
-        <input type="text" name="email">
-      </p>
-      <p>Password
-        <input type="password" name="password">
-      </p>
-      <p>Confirm Password
-        <input type="password" name="password">
-      </p>
-      <input type="submit">
-    </form>
-
+    <div class="ui container vertical segment">
+      <h2>Sign Up!</h2>
+      <p>Fill out the form below to create a new account:</p>
+      <form class="ui form">
+        <div class="field">
+          <label>Userame</label>
+          <input name="username" placeholder="Username" type="text">
+        </div>
+        <div class="field">
+          <label>E-mail address</label>
+          <input name="email" placeholder="E-mail address" type="text">
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input name="password" placeholder="Password" type="password">
+        </div>
+        <div class="field">
+          <label>Confirm Password</label>
+          <input name="confirmpassword" placeholder="Confirm Password" type="password">
+        </div>
+        <div class="ui teal submit button">Submit</div>
+        <div class="ui error message"></div>
+      </form>
+    </div>
   </main>
 
   <footer>
-    <div class="contact">
-      <h5>Contact Us</h5>
-      <p>Amazeriffic!</p>
-      <p>555 Fiftieth Street</p>
-      <p>Asheville, NC 28801</p>
-    </div>
-
-    <div class="sitemap">
-      <h5>Sitemap</h5>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Privacy</a></li>
-        <li><a href="#">Support</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="#">Careers</a></li>
-      </ul>
+    <div class="ui inverted vertical footer segment">
+      <div class="ui container">
+        <div class="ui stackable inverted divided equal height stackable grid">
+          <div class="three wide column">
+            <h4 class="ui inverted header">Sitemap</h4>
+            <div class="ui inverted link list sitemap">
+              <a href="index.html" class="item">Home</a>
+              <a href="#" class="item">About Us</a>
+              <a href="#" class="item">Privacy</a>
+              <a href="#" class="item">Support</a>
+              <a href="faq.html" class="item">FAQ</a>
+              <a href="#" class="item">Careers</a>
+            </div>
+          </div>
+          <div class="seven wide column contact">
+            <h4 class="ui inverted header">Contact Us</h4>
+            <p>Amazeriffic!</p>
+            <p>555 Fiftieth Street</p>
+            <p>Asheville, NC 28801</p>
+          </div>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
