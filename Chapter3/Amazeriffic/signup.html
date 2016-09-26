@@ -3,6 +3,8 @@
 
 <head>
   <title>Amazeriffic</title>
+  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+  <script src="semantic/dist/semantic.min.js"></script>
 </head>
 
 <body>
@@ -20,12 +22,18 @@
     <p>Fill out the form below to create a new account:</p>
     <form action="processingscript.php" method="post">
       <p>
-        Username<br>
-        <input type="text" name="username"><br>
-        E-mail Address<br>
-        <input type="text" name="email"><br>
-        Password<br>
-        <input type="password" name="password"><br><br>
+        <p>Username
+          <input type="text" name="username">
+        </p>
+        <p>E-mail Address
+          <input type="text" name="email">
+        </p>
+        <p>Password
+          <input type="password" name="password">
+        </p>
+      <p>Confirm Password
+          <input type="password" name="password">
+        </p>
         <input type="submit">
       </p>
     </form>
