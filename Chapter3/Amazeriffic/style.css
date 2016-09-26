@@ -41,6 +41,22 @@ main .right {
   width: 285px;
 }
 
+main p{
+  padding-bottom: 1em;
+}
+
+h2{
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  font-size: 125%;
+  padding-top: .5em;
+  padding-bottom: .5em;
+}
+
+h3{
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  padding-bottom: .5em;
 }
 
 footer .left {
