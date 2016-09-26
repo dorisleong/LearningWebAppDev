@@ -1,27 +1,37 @@
 var main = function () {
-    "use strict";
+  'use strict';
 
-    var addCommentFromInputBox = function () {
-        var $new_comment;
+  var addCommentFromInputBox = function (inputclass, commentclass) {
+    var $newComment;
 
-        if ($(".comment-input input").val() !== "") {
-            $new_comment = $("<p>").text($(".comment-input input").val());
-            $new_comment.hide();
-            $(".comments").append($new_comment);
-            $new_comment.fadeIn();
-            $(".comment-input input").val("");
-        }
-    };
+    if ($(inputclass).val() !== '') {
+      $newComment = $('<p>').text($(inputclass).val()).addClass(commentclass);
+      $newComment.hide();
+      $('.comments').append($newComment);
+      $newComment.fadeIn();
+      $(inputclass).val('');
+    }
+  };
 
-    $(".comment-input button").on("click", function (event) {
-        addCommentFromInputBox();
-    });
+  $('.comment-input button').on('click', function (event) {
+    addCommentFromInputBox('.comment-input input', 'first');
+  });
 
-    $(".comment-input input").on("keypress", function (event) {
-        if (event.keyCode === 13) {
-            addCommentFromInputBox();
-        }
-    });
+  $('.comment-input input').on('keypress', function (event) {
+    if (event.keyCode === 13) {
+      addCommentFromInputBox('.comment-input input', 'first');
+    }
+  });
+
+  $('.second-input button').on('click', function (event) {
+    addCommentFromInputBox('.second-input input', 'second');
+  });
+
+  $('.second-input input').on('keypress', function (event) {
+    if (event.keyCode === 13) {
+      addCommentFromInputBox('.second-input input', 'second');
+    }
+  });
 };
 
 $(document).ready(main);

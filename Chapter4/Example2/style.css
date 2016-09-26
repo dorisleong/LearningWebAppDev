@@ -1,14 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    width: 855px;
-    margin: auto;
-    background: ivory;
-    font-size: 100%;
-    font-family: sans-serif;
+  width: 855px;
+  margin: auto;
+  background: ivory;
+  font-size: 100%;
+  font-family: sans-serif;
 }
 
 header {
@@ -19,7 +19,6 @@ header {
 h1 {
   float: left;
 }
-
 
 header p {
   float: right;
@@ -33,7 +32,6 @@ main {
   padding: 30px 0;
   border-bottom: 1px solid darkslategray;
 }
-
 
 .comment-input {
   float: left;
@@ -73,16 +71,16 @@ main {
   border-radius: 5px;
 }
 
-.comments p:nth-child(even) {
-    background: lavender;
+.first {
+  background: lavender;
 }
 
-.comments p:nth-child(odd) {
-    background: gainsboro;
+.second {
+  background: gainsboro;
 }
 
 footer {
-    font-size: smaller;
-    margin-top: 5px;
-    clear: both;
+  font-size: smaller;
+  margin-top: 5px;
+  clear: both;
 }
