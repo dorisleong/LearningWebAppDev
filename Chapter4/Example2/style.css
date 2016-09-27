@@ -71,12 +71,20 @@ main {
   border-radius: 5px;
 }
 
-.first {
+.first:nth-child(even) {
   background: lavender;
 }
 
-.second {
-  background: gainsboro;
+.first:nth-child(odd) {
+  background: thistle;
+}
+
+.second:nth-child(even) {
+  background: lightblue;
+}
+
+.second:nth-child(odd) {
+  background: paleturquoise;
 }
 
 footer {

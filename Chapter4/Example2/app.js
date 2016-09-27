@@ -13,21 +13,21 @@ var main = function () {
     }
   };
 
-  $('.comment-input button').on('click', function (event) {
+  $('.comment-input button').on('click', function () {
     addCommentFromInputBox('.comment-input input', 'first');
   });
 
-  $('.comment-input input').on('keypress', function (event) {
+  $('.comment-input input').on('keypress', function () {
     if (event.keyCode === 13) {
       addCommentFromInputBox('.comment-input input', 'first');
     }
   });
 
-  $('.second-input button').on('click', function (event) {
+  $('.second-input button').on('click', function () {
     addCommentFromInputBox('.second-input input', 'second');
   });
 
-  $('.second-input input').on('keypress', function (event) {
+  $('.second-input input').on('keypress', function () {
     if (event.keyCode === 13) {
       addCommentFromInputBox('.second-input input', 'second');
     }
